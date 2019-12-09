@@ -6,23 +6,26 @@ The application is adhering to the best practices like the same is generated usi
 ## Technical Stack
 
 Application developed in Angular 8
+Uses:
 Node.js version	12.13.1
 Visual Studio Code
 HTML5
 SCSS
 Bootstrap 4
 Angular core 8.2.14
+ng2-charts 
+chart.js
 
 ## Set up
 
-install node.js 12.13.1
-npm install @angular/cli
-ng new WeatherApp
-clone/download the code from Github repository
-run 'npm install'
-run 'ng serve -o' to open the application in default browser
-to run the test cases run 'ng test'
-Hit: localhost:4200, to run the applicaction
+1. install node.js 12.13.1
+2. npm install @angular/cli
+3. ng new WeatherApp
+4. Clone/download the code from Github repository
+5. Run 'npm install'
+6. Run 'ng serve -o' to open the application in default browser
+7. Run the test cases - run 'ng test'
+8. Hit: localhost:4200, to run the applicaction
 
 ## Rest End Points
 
@@ -48,24 +51,24 @@ Api key is generated only once and the same is used for any user. The API key ge
 
 ## Implementation
 
-Dropdown in the center of the screen enables to get current weather information for listed cities
-On selecting a city, the data is displayed 
-On click of Forecast button, a modal(popup) opens to display the line chart for the weather forecast of 15 hours
-App component includes logic for displaying current weather information for selected city
-Forecast component includes the line chart depicting forecast of 15 hours
-Created 2 adapters to convert JSON data to the corresponding created model for current weather and forecast APIS
-Used rxjs to get data from Openweather API
+Dropdown in the center of the screen enables to get current weather information for listed cities.
+On selecting a city, the data is displayed. 
+On click of Forecast button, a modal(popup) opens to display the line chart for the weather forecast of 15 hours.
+App component includes logic for displaying current weather information for selected city.
+Forecast component includes the line chart depicting forecast of 15 hours.
+Created 2 adapters to convert JSON data to the corresponding created model for current weather and forecast APIs.
+Used rxjs to get data from Openweather API.
 The data fed to line chart is obtained using rxjs.
 
 ## Future Enhancements
 
-UI Enhancements
-Support of Fahrenheit for temperature
-Had planned to add animation based on current weather
-Make appropriate model properties instead of properties in received data
-100% code coverage, test cases not written for forecast component, adapters
-Http interceptor to be used to add query parameters/headers to REST APIs
-Use cache to store weather and forecast data and refresh it after 10 minutes
+1. UI Enhancements
+2. Support of Fahrenheit for temperature
+3. Had planned to add animation based on current weather
+4. Make appropriate model properties instead of properties in received data
+5. 100% code coverage, test cases not written for forecast component, adapters
+6. Http interceptor to be used to add query parameters/headers to REST APIs
+7. Use cache to store weather and forecast data and refresh it after 10 minutes
 
 ## Development server
 
