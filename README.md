@@ -30,14 +30,14 @@ Based on the selected location the corresponding API is called for current weath
 
 ### API to fetch current weather
 
-http://api.openweathermap.org/data/2.5/weather?q=Amsterdam,NL&appid=a37aa2b98ecae5f776fe4b04cf5de8c0
+http://api.openweathermap.org/data/2.5/weather?q=Amsterdam,NL&appid=<API_ID>
 This API gives the current weather information for specific location
 This API uses 2 query parameters - location(q) and apiKey (appid)
 As of now this application supports locations - London, Amsterdam, Berlin, Paris and Rome
 
 ### API to fetch forecast
 
-http://api.openweathermap.org/data/2.5/forecast?q=Amsterdam,NL&appid=4217e0dc20b9dfb00bc4a701fbaa637c
+http://api.openweathermap.org/data/2.5/forecast?q=Amsterdam,NL&appid=<API_ID>
 This API gives the current weather information for specific location
 This API uses 2 query parameters - location(q) and apiKey (appid)
 As of now this application supports locations - London, Amsterdam, Berlin, Paris and Rome
