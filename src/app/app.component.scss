@@ -1,0 +1,106 @@
+
+.weather-img {
+  margin: 25px 0px 0 30px;
+  padding-right: 0;
+}
+
+.temperature {
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+}
+
+li {
+  border: none;
+  border-radius: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: rgb(247, 231, 231);
+  background-color: transparent;
+  font-family: Arimo;
+  font-weight: lighter;
+}
+
+
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.dropbtn:focus {
+  outline: none;
+}
+
+.dropdown {
+  text-align: center;
+  margin: 3% 0 3% 0;
+}
+
+.dropdown-content {
+  background-color: #a3d8f5;
+  width: 150px;
+}
+
+.dropdown-content option {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content option:hover {
+  border: 1px solid black;
+}
+
+
+.float-left {
+  float: left;
+}
+
+.btn-forecast {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+
+  &:hover {
+    outline: none;
+  }
+
+  &:active {
+    background-color: grey;
+  }
+}
+
+.forcast-info {
+  border: 1px solid;
+  width: 40%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.select-city {
+  text-align: center;
+}
+
+.header-info {
+  padding: 5px;
+}
+
+.header-data {
+  text-align: center;
+  font-size: 55px;
+}
+
+.modal-title {
+  text-align: center;
+}

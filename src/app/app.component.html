@@ -1,0 +1,48 @@
+  <div class="row p20">
+    <h2 class="col-sm-12 header-data"> Welcome to Weatherify!</h2>
+  </div>
+  <div class="dropdown col-sm-12">
+    <select class="dropbtn" (change)="changeCity($event.target)">
+      <ng-container class="dropdown-content">
+        <option class="dropdown-content" value="" disabled>Select your city</option>
+        <option class="dropdown-content">London</option>
+        <option class="dropdown-content">Amsterdam</option>
+        <option class="dropdown-content">Paris</option>
+        <option class="dropdown-content">Berlin</option>
+        <option class="dropdown-content">Rome</option>
+      </ng-container>
+    </select>
+  </div>
+
+  <div class="forcast-info m3" *ngIf="weatherData.details.length">
+    <div *ngIf="averageTemperature" class="display-temp row">
+      <div style='font-size:40px;' *ngIf="selectedCity" class="title col-sm-12">{{selectedCity}}</div>
+      <div class="col-sm-12 fs25">{{displayDate | date:'EEEE'}}</div>
+      <div *ngIf="averageTemperature" class="col-sm-12 fs25"> {{status}}</div>
+      <div *ngIf="windStrength" class="col-sm-12 fs25">{{windStrength}} Kmph </div>
+      <img [src]="weatherImg" height="150" width="150px">
+      <span class="col-sm-8 temperature" style='font-size:75px;'>{{averageTemperature | number:'2.1-2'}} &#8451;</span>
+    </div>
+
+    <button class="btn btn-forecast" *ngIf="selectedCity" (click)="forecast()" data-toggle="modal"
+      data-target="#forecastGraph">Forecast</button>
+    </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog" id="forecastGraph">
+    <div class="modal-dialog top20" style="width:1250px;">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Today's Forecast</h4>
+        </div>
+        <div class="modal-body">
+          <app-forecast [temperatureData]="temperatureData" [timeData]="timeArray" [isClose]="isClose"></app-forecast>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" (click)="isClose=true">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
