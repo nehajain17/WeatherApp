@@ -44,7 +44,7 @@ As of now this application supports locations - London, Amsterdam, Berlin, Paris
 
 ## Assumptions
 
-Api key is generated only once and same is used for any user.
+Api key is generated only once and the same is used for any user. The API key generation is a one time activity.
 
 ## Implementation
 
